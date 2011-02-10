@@ -12,6 +12,14 @@ module Precious
         CGI.escape(@name)
       end
 
+      def current_users
+        `who | cut -f1 -d' ' | sort | uniq | wc -w`
+      end
+
+      def total_users
+        `cat /etc/passwd | wc -l`.to_i - 31
+      end
+
       def title
         "Home"
       end
