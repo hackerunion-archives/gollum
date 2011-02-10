@@ -1,28 +1,106 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8" /> 
+ 
+<meta name="Keywords" content="hacker,new york,nyc,manhattan,code,engineer,jobs,hacking,dev,developer,open source,union" /> 
+<meta name="Description" content="Uniting through Unix: Free Logins for NY Hackers" /> 
+ 
+<title>ny hacker // org | {{title}}</title> 
+<link rel="shortcut icon" href="http://nyhacker.org/favicon.ico"> 
+<script type="text/javascript" src="http://nyhacker.org/static/js/css.js"></script> 
   <link rel="stylesheet" type="text/css" href="/css/gollum.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/editor.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/dialog.css" media="all">
   <link rel="stylesheet" type="text/css" href="/css/template.css" media="all">
-  
+<link rel="stylesheet" href="http://nyhacker.org/assets/css/style.css" type="text/css" media="screen" title="Default" />   
   <!--[if IE 7]>
   <link rel="stylesheet" type="text/css" href="/css/ie7.css" media="all">
   <![endif]-->
-  
-  <script type="text/javascript" src="/javascript/jquery.js"></script>
+ 
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script> 
   <script type="text/javascript" src="/javascript/gollum.js"></script>
   <script type="text/javascript" src="/javascript/gollum.dialog.js"></script>
   <script type="text/javascript" src="/javascript/gollum.placeholder.js"></script>
   
   <script type="text/javascript" 
     src="/javascript/gollum-editor/gollum.editor.js"></script>
-  <title>{{title}}</title>
-</head>
-<body>
+</head> 
+ <body>
+  <table class="vcenter">
+    <tr>
+      <td>
+        <div class="content">
+          <div class="nav">
+            <a href="http://nyhacker.org/">home</a> |
+            <a class="highlight" href="http://nyhacker.org/apply.php">get involved</a> |
+            <a class="highlight" href="http://nyhacker.org/calendar.php">events</a> |
+            <a href="http://nyhacker.org/mission.php">mission</a> |
+            <a href="http://nyhacker.org/hackers.php">directory</a> |
+            <a href="http://blog.nyhacker.org/">blog</a> |
+            <a href="http://wiki.nyhacker.org/">wiki</a> |
+            {{current_users}} / {{total_users}} online
+          </div>
+		  <div class="console">
+            <pre class="logo">
 
-{{{yield}}}
+                        dP                         dP
+                        88                         88
+      88d888b. dP    dP 88d888b. .d8888b. .d8888b. 88  .dP  .d8888b. 88d888b.
+      88'  `88 88    88 88'  `88 88'  `88 88'  `"" 88888"   88ooood8 88'  `88
+      88    88 88.  .88 88    88 88.  .88 88.  ... 88  `8b. 88.  ... 88
+      dP    dP `8888P88 dP    dP `88888P8 `88888P' dP   `YP `88888P' dP
+                    .88
+                d8888P                    the nyc hacker union.
+            </pre>
+          </div>
+<br />
+<div id="main">
+      <div class="site">
+        <div id="guides">
 
-</body>
+          {{{yield}}}
+        </div>
+      </div>
+    </div>
+<br />
+<div class="console">
+            <p><em>$</em> cat mission.txt</p>
+            <p class="spaced">
+              to sustain and support the hacker community through shared resources, mentorship, programming, and opportunities.</em>
+            </p>
+          </div>
+
+          <br />
+
+          <p class="start-now"><em>everyone is welcome!</em> <a href="http://nyhacker.org/apply.php">click here</a> to get started <span class="sym">&rarr;</span></p>
+  
+          <br />
+          <hr />
+<div class="footer">
+            <div class="social">
+              <a href="http://www.facebook.com/pages/nyhackerorg/150011631724472" class="fb">our facebook</a>
+              <a href="http://people.fm/go/36" class="pp">call us</a>
+              <a href="http://twitter.com/nyhacker" class="tw">our twitter</a>
+            </div>
+          </div>
+</td>
+</tr>
+</table>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18294644-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
 </html>
+
