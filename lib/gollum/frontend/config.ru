@@ -5,7 +5,7 @@ require 'gollum/frontend/app'
 system("which git") or raise "Looks like I can't find the git CLI in your path.\nYour path is: #{ENV['PATH']}"
 
 gollum_path = '/var/apps/wiki'
-
+wiki_options = {}
 disable :run
 
 configure :development, :staging, :production do
@@ -17,5 +17,5 @@ end
 
 $path = gollum_path
 Precious::App.set(:gollum_path, gollum_path)
-
+Precious::App.set(:wiki_options, wiki_options)
 run Precious::App
